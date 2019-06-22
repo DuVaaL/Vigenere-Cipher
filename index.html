@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/logo_Moa.png">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta name="descripton" content="">
+        <meta name="author" content="Duval and Carole">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Vigenere ~JAVASCRIPT </title>
+      
+    </head>
+    <body>
+        <header>
+            <center><h1><a href="Vigenere ~Index.html" target="_blank" style="font-size: 25px; font-weight: bold; text-decoration: none; font-size: 30px">Projet Vigenere</a></h1></center>
+            <nav id="Nav_head">
+                <ul>
+                    <li><a href="#Description" style="font-size: 17px; text-decoration: none;"> Description </a></li>
+                    <li><a href="#Programme" style="font-size: 17px; text-decoration: none;"> Programme JAVASCRIPT </a></li>
+                </ul>
+            </nav>
+        </header>
+
+       <div id="main">
+            <center>
+               <h1 style="font-size: 40px;"><img src="Img/Vigenere_javascript.png" alt="" width=40px height=40px> Vigenere (Javascript)</h1>
+            </center>
+
+            <h3 id="Description">Description</h3>
+          <p> <span>Ce</span> programme JavaScript chiffre et déchiffre les messages en utilisant le chiffrement Vigenère. La clé doit avoir au moins une lettre. La clé est insensible à la casse et les lettres non-ignorées. Lors du cryptage ou du décryptage, la casse est conservée et les lettres non-modifiées ne sont pas modifiées. Le chiffre de César est un cas particulier du chiffre de Vigenère avec une clé à une lettre.</p>
+          <p>Le Code Source est disponible <a href="./js/vigenere.js" target="_blank">ICI</a>.</p>
+
+          <h3 id="Programme">Programme</h3>
+            <script type="application/javascript" src="./js/vigenere.js"></script>
+        
+           <form action="#" method="get" onsubmit="return false">
+               <table>
+                <tbody>
+                    <tr>
+                        <td><label for="text">Text: </label> </td>
+                          <td><textarea id="text" cols="50" rows="10" style="width:40em; height:15em">JE VOYAGE POUR MONTREAL CE SAMEDI</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="key">Key: </label></td> 
+                         <td><input type="text" value="abc" id="key" style="width:10em;"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Encrypt" onclick="decrypt(false)" />
+                           <input type="button" value="Decrypt" onclick="decrypt(true)"/>
+
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+           </form>
+     </div>
+   
+          <footer>
+            <center>
+                <p><a href="" style="width:1.73em; vertical-align:middle"> Projet-Vigenere</a>
+            <p><a href="copyright" id="copyrightlink" title="Copyright information"> Copyright &copy; 2019 PROJET VIGENERE</a></p>
+            <p> Credits By : <a href="https://www.nayuki.io/" title="Nayuki_information" target="_blank">Nayuki</a></p>
+            </center>
+         </footer>
+            <script type="text/javascript" src="./js/vigenere.js"></script>
+    </body>
+</html>
